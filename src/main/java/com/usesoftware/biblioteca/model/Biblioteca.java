@@ -21,4 +21,14 @@ public class Biblioteca {
 	public void removerLivro(Livro livro) {
 		this.livros.remove(livro.getId(), livro);
 	}
+
+	public Map<Long, Livro> getLivros() {
+		return livros;
+	}
+
+	public void setLivros(Map<Long, Livro> livros) {
+		this.livros = livros;
+	}
+	
+	
 }
