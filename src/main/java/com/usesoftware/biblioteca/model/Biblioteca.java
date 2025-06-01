@@ -6,6 +6,14 @@ import java.util.Map;
 public class Biblioteca {
 	private Map<Long, Livro> livros = new HashMap<>();
 	
+	public Biblioteca() {
+        
+    }
+	
+	public Map<Long, Livro> listarLivros() {
+		return this.livros;
+	}
+	
 	public void adicionarLivro(Livro livro) {
 		this.livros.put(livro.getId(), livro);
 	}
