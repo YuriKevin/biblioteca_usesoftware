@@ -4,9 +4,9 @@ public class Aluno extends Usuario{
 	private int creditos;
 	private boolean possuiLivro;
 	
-	public Aluno(Long id, String nome, int creditos) {
+	public Aluno(Long id, String nome) {
 		super(id, nome);
-		this.creditos = creditos;
+		this.creditos = 1;
 		
 	}
 
